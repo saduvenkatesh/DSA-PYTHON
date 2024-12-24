@@ -16,14 +16,20 @@
 # obj = solution()
 # k=obj.remove_duplicates(a)
 # print(k)
+class Solution:
+    def removeDuplicates(self, nums: list[int]) -> int:
+        i = 1
 
-def remove_duplicates(nums:list[int]):
-    size=len(nums)
-    for i in range(1,size):
-        if nums[i]==nums[i-1]:
-            nums[i]=0
-    print(nums)
+        for j in range(1, len(nums)):
+            if nums[j] != nums[i - 1]:
+                nums[i] = nums[j]
+                i += 1
+        
+        return i
+    
 
+a=[1,2,2,3,3,3,4,4,4,4]
 
-a=[1,2,2,3,3,3,4,4,4,4] 
-remove_duplicates(a)     
+obj = Solution()
+k = obj.removeDuplicates(a)
+print(k)
