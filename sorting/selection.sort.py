@@ -35,7 +35,3 @@ arr=[18,3,2,33,21]
 list= sorting(arr)
 sorted_list = list.selection_sort()
 print("The sorted list is : ",sorted_list)
-
-    
-        
-        
