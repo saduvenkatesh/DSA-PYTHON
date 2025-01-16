@@ -74,6 +74,29 @@ class singlyLinkedList :
         prev.next = curr.next
         
         curr = None
+    
+    def isValueExist(self,data: int):
+        
+        isExist = True
+        temp = self.head
+        
+        while  temp.next:
+            temp = temp.next
+            if temp.data == data :
+                return isExist
+        isExist=False
+        return isExist
+            
+            
+    
+    def delete_by_value(self, data) :
+        pass
+    
+    def insert_after_desired_value(self) :
+        pass
+    
+    def insert_before_desired_value(self) :
+        pass
         
             
     def display(self) :
@@ -94,8 +117,6 @@ sll.append(2)
 sll.append(3)
 sll.append(4)
 sll.append(5)
-sll.delete_at_specific_position(3)
-sll.delete_at_specific_position(4)
-
 
 sll.display()
+ 
