@@ -48,6 +48,33 @@ class singlyLinkedList :
                 position-=1
             newNode.next = temp.next
             temp.next = newNode
+    
+    def delete_at_begin (self ):
+        
+        temp = self.head
+        self.head = temp.next
+        
+        temp = None
+    
+    def delete_at_end(self) :
+        temp = self.head
+        while temp.next.next :
+            temp = temp.next
+        temp.next = None
+        
+    def delete_at_specific_position(self, position: int) :
+        
+        prev = self.head
+        
+        while position > 2 :
+            prev = prev.next
+            position-=1
+        curr = prev.next
+        
+        prev.next = curr.next
+        
+        curr = None
+        
             
     def display(self) :
         
@@ -64,12 +91,11 @@ sll = singlyLinkedList()
 
 sll.append(1)
 sll.append(2)
-
 sll.append(3)
+sll.append(4)
 sll.append(5)
-sll.insert_at_position(4,4) # data, position
-sll.insert_at_position(6,6)
-sll.insert_at_position(10,4)
+sll.delete_at_specific_position(3)
+sll.delete_at_specific_position(4)
 
 
 sll.display()
