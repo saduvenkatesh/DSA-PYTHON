@@ -111,6 +111,7 @@ class singlyLinkedList :
 
 
 sll = singlyLinkedList()
+sl2 = singlyLinkedList()
 
 sll.append(1)
 sll.append(2)
@@ -119,4 +120,12 @@ sll.append(4)
 sll.append(5)
 
 sll.display()
+
+sl2.append(6)
+sl2.append(7)
+sl2.append(8)
+sl2.append(9)
+sl2.append(0)
+
+sl2.display()
  
