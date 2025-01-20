@@ -10,13 +10,13 @@ void insertionSort(int arr[], int n){
     int prev, curr;
     for (int i=1; i<n; i++){
         prev = i-1;
-        curr = arr[i];
+        curr = i;
 
-        while(prev>=0 && arr[prev] > curr){
+        while(prev>=0 && arr[prev] > arr[curr]){
             arr[prev+1] = arr[prev];
             prev--;
         }
-        arr[prev+1] = curr;
+        arr[prev+1] = arr[curr];
     }
 }
 
