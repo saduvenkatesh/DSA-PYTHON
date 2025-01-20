@@ -33,3 +33,12 @@ int main (){
     insertionSort(arr, n);
     printArray(arr, n);
 }
+
+/*
+    Algorithm:
+    Start from the second element (index 1).
+    Compare it with the element before it.
+    If the current element is smaller than the previous element, shift the previous element one position to the right.
+    Continue shifting the elements to the right until the current element is in the correct position.
+    Repeat this process for all the elements in the array until the array is sorted.
+*/

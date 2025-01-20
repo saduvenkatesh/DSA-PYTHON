@@ -40,3 +40,15 @@ int main (){
 
     printArray(arr, n);
 }
+
+
+
+/*
+     Algorithm:
+     Start at the beginning of the array.
+     Compare the first two elements. If the first element is greater than the second, swap them.
+     Move to the next pair of elements and repeat the comparison and swap if needed.
+     After each pass through the array, the largest unsorted element "bubbles up" to the end of the array.
+     Repeat the process for the remaining unsorted elements, each time reducing the number of elements to compare.
+     Stop when no swaps are needed, which means the array is sorted.
+*/
