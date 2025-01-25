@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-void binarySearch(int arr[], int n, int key) {
+int binarySearch(int arr[], int n, int key) {
     int low = 0, high = n - 1;
 
     while (low <= high) {
@@ -10,7 +10,7 @@ void binarySearch(int arr[], int n, int key) {
 
         if (arr[mid] == key) {
             cout << "Element found at index " << mid << endl;
-            return;
+            return mid;
         } else if (arr[mid] < key) {
             low = mid + 1;
         } else {
@@ -18,6 +18,7 @@ void binarySearch(int arr[], int n, int key) {
         }
     }
     cout << "Element not found" << endl;
+    return 0;
 }
 
 int main() {
