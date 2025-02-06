@@ -78,3 +78,13 @@ int main() {
     printArray(arr, size);
     return 0;
 }
+
+
+
+/*
+        Divide: If the array has more than one element, find the middle index.
+        Recursively Sort: Apply merge sort on the left half.
+        Recursively Sort: Apply merge sort on the right half.
+        Merge: Merge the two sorted halves by comparing elements one by one.
+        Return: The fully sorted array after merging all parts.
+ */
