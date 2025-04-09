@@ -8,7 +8,7 @@ pair<int,int> minmax(vector<int> &arr, int st, int end){
     if(st==end)
         return {arr[st], arr[st]};
     if (end==st+1){
-        if(arr[st<arr[end]])
+        if(arr[st]<arr[end])
            return {arr[st], arr[end]};
         else
            return {arr[end], arr[st]};
